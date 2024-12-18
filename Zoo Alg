@@ -1,0 +1,41 @@
+1. Animal Class
+-make a Animal class with the follow attributes:
+--self.name
+--self.species
+2. Methods for animal class
+-make_sound method which returns a "generic animal sound" which will be overridden by subclasses
+-get_info method which will return a formatted string of the animals name, species, and sound
+3. Animal Subclasses
+-Bear, Elephant, Penguin, and Cheetah subclasses are added
+-each class inherits from the animal class and adds on to or overrides methods
+-__init__ statements are included from animal class to subclasses
+4. Bear Subclass
+-self.fur_color (string) is added as an additional attribute for this subclass
+-make_sound method from parent class is overridden with a 'roar' sound.
+-get_info method is also overridden to add the fur color information.
+5. Elephant Subclass
+-self.weight (float) attribute is added as an additional attribute for this subclass.
+-make_sound method from parent class is overridden with 'trumpet' sound.
+-get_info method is also overridden to include weight information.
+6. Penguin Subclass
+-self.height (float) attribute is added as an additional attribute for this subclass.
+-make_sound method from parent class is overridden with 'squawk' sound.
+-get_info method is also overridden to include height information.
+7. Cheetah Subclass
+-self.speed (float) attribute is added as an additional attribute for this subclass.
+-make_sound method from parent class is overridden with 'purrr' sound.
+-get_info method is also overridden to include speed information.
+8. Main Class
+-add the attribute self.zoo that allows the user to store all the animals created for that zoo.
+-Create an interactive menu that allows the user to:
+--add animals, print all, or print specific information for one animal
+-Add the following methods to class main:
+-add_aminals, print_all, and print_specific
+-add_animals method will display a additional interactive menu that allows you to select from the 4 animals to input their information.
+-print_all method will display all the animals in your zoo with their corresponding information.
+-print_specific will display a additional interactive menu that allows the user to select a specific animal, and then all the names associated with that animal will print out, with their information.
+9. Execution
+-Program checks if it is being run as the main module and initializes an instance of the Main class.
+-Calls start method, launching an interactive menu for managing the zoo system until the user chooses to exit.
+
+
