@@ -1,1 +1,43 @@
-This program beings with the Animal class that is the parent class for all the animal subclasses. Attributes included in the parent class are name and species along with methods like make_sound and get_info. Make_sound returns a generic sound while get_info provides formatted details about the animal. The four subclasses are Bear, Elephant, Penguin, and Cheetah. These four subclasses use inheritance from the Animal class while also added new attributes like fur_color, weight, height, and speed and also override both make_sound (which provides animal specific sounds) and get_info (which includes animal specific additional details). The Main class starts with a zoo attribute which stores all the animals add to that zoo. The Main class menu also has an interactive menu offering options to add aniamls, display all animals, or filter animals by type. Methods that are in the Main class are add_animals, which adds aniamls to the zoo along with specific user input information, while print_all and print_specific display animal details. The add_animals and print_specific methods both have additional interactive menu’s that help in selecting a specific animal to either add or retrieve animal specific information. The print_all method prints all animals and their corresponding information. The program initializes the Main class and runs the interactive menu when executed as the main module, allowing users to manage their zoo until they exit.
+# Zoo Management System
+
+## Overview
+The Zoo Management System is a Python-based application that allows users to manage a collection of various animals in a zoo-like setting. The system supports adding different types of animals, such as bears, elephants, penguins, and cheetahs, each with specific attributes. Users can add animals, view all animals, or print specific types of animals from the collection.
+
+## Features
+- **Add Animals**: Add bears, elephants, penguins, and cheetahs to the zoo with specific attributes like fur color, weight, height, and speed.
+- **View All Animals**: Display details of all animals currently in the zoo.
+- **Filter by Animal Type**: View animals of a specific type (e.g., all bears or all penguins).
+- **Interactive Menu**: Navigate through the application using a simple text-based menu.
+
+## How to Run
+To run the Zoo Management System, make sure Python is installed on your computer. Follow these steps:
+
+1. **Clone the Repository**:
+    ```
+    git clone https://github.com/yourusername/zoo-management-system.git
+    ```
+2. **Navigate to the Project Directory**:
+    ```
+    cd zoo-management-system
+    ```
+3. **Run the System**:
+    ```
+    python zoo_manager.py
+    ```
+
+## Usage Instructions
+Once the application starts, you will interact with it through a menu-driven interface:
+1. **Add Animals**: Choose the type of animal to add and provide the required details.
+2. **Print All Animals**: Lists all animals in the zoo with their details.
+3. **Print Specific Animals**: Select a specific type of animal to view, such as all bears or all cheetahs.
+4. **Exit the Program**: Terminate the application.
+
+### Example Commands
+- **Add an Elephant**:
+  - Choose to add an elephant.
+  - Provide the name, species, and weight of the elephant.
+- **View All Animals**:
+  - Select the option to print all animals and view details like name, species, and specific attributes.
+
+## Development
+This project utilizes basic principles of object-oriented programming in Python, including inheritance, polymorphism, and encapsulation. Each animal type extends a base `Animal` class, which provides shared functionality and interface for all animals.
